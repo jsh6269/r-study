@@ -33,7 +33,7 @@ df$gender
 subset(df, subset = price >= 2 & gender == "none")
 
 # read csv
-PATH <-'https://raw.githubusercontent.com/guru99-edu/R-Programming/master/prison.csv'
+PATH <-'prison.csv'
 df <- read.csv(PATH)[1:5]
 
 # head and tail
