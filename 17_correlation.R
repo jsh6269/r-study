@@ -1,5 +1,5 @@
 library(dplyr)
-data <- read.csv("british_household.csv")
+data <- read.csv("dataset/british_household.csv")
 summary(data)
 
 # income 이상치 제거
@@ -45,9 +45,12 @@ library(GGally)
 ggcorr(data)
 
 library(ggplot2)
-ggpairs(data, columns = c("log_totexp", "log_income", "age", "wtrans"), 
+bi_plot <- ggpairs(data, columns = c("log_totexp", "log_income", "age", "wtrans"), 
         title = "Bivariate analysis of revenue expenditure by the British household",
         upper = list(continuous = wrap("cor", size = 3)),
         lower = list(continuous = wrap("smooth", alpha = 0.3, size = 0.1)),
         mapping = aes(color = children_fac)
 )
+bi_plot
+
+ggsave("plot/bivariate-analysis.png", plot = bi_plot, width = 20, height = 20, units = "cm")

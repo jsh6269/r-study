@@ -1,4 +1,4 @@
-df <- read.csv('mtcars.csv', header=TRUE, sep=',')
+df <- read.csv('dataset/mtcars.csv', header=TRUE, sep=',')
 head(df)
 length(df)
 

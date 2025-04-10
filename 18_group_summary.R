@@ -1,6 +1,6 @@
 library(dplyr)
 
-data <- read.csv("lahman-batting.csv") %>%
+data <- read.csv("dataset/lahman-batting.csv") %>%
 select(c(playerID, yearID, AB, teamID, lgID, G, R, HR, SH)) %>%
 arrange(playerID, teamID, yearID)
 

@@ -34,4 +34,4 @@ box_plot <- box_plot +
   theme_classic() +
   stat_summary(fun.y = mean, geom = "point", size = 2)
 
-ggsave("box-plot.png", plot = box_plot, width = 30, height = 15, units = "cm")
+ggsave("plot/box-plot.png", plot = box_plot, width = 30, height = 15, units = "cm")

@@ -1,6 +1,6 @@
 library(dplyr)
 
-df <- read.csv("poisons.csv") %>%
+df <- read.csv("dataset/poisons.csv") %>%
   select(-X) %>%
   mutate(poison = factor(poison, ordered = TRUE))
 

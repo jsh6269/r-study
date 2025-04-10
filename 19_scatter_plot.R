@@ -27,4 +27,4 @@ graph <- graph +
 
 graph
 
-ggsave("scatter-plot.png", plot = graph, width = 10, height = 10, units = "cm")
+ggsave("plot/scatter-plot.png", plot = graph, width = 10, height = 10, units = "cm")

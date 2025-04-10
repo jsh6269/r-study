@@ -25,4 +25,4 @@ histo <- ggplot(data_histogram, aes(x = cyl, y = mean_mpg, fill = cyl)) +
   labs(title = "average mpg for each cyl") +
   theme_classic()
 
-ggsave("bar-plot.png", plot = histo, width = 10, height = 10, units = "cm")
+ggsave("plot/bar-plot.png", plot = histo, width = 10, height = 10, units = "cm")
